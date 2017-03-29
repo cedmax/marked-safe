@@ -1,0 +1,53 @@
+{
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "Promise": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-jsx"],
+  "no-cond-assign": [2, "always"],
+  "rules": {
+    "jsx-quotes": [2, "prefer-double"],
+    "no-multiple-empty-lines": [2, { "max": 1 }],
+    "no-unneeded-ternary": 2,
+    "one-var": [2, {
+      "var": "never",
+      "let": "never",
+      "const": "never"
+    }],
+    "no-duplicate-imports": 2,
+    "no-useless-constructor": 2,
+    "no-var": 2,
+    "prefer-const": 2,
+    "prefer-template": 2,
+    "prefer-arrow-callback": 2,
+    "object-shorthand": 2,
+    "react/prop-types": 1,
+    "react/jsx-wrap-multilines": 2,
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-indent": [2, 2],
+    "react/jsx-key": 2,
+    "react/jsx-pascal-case": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/self-closing-comp": 2,
+    "react/sort-comp": [2, { 
+      "order": [
+        "static-methods",
+        "lifecycle",
+        "render",
+        "everything-else"
+      ]
+    }],
+    "react/no-unused-prop-types": 2,
+    "react/jsx-no-duplicate-props": [2, { "ignoreCase": true }],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-closing-bracket-location": [1, "line-aligned"],
+  }
+}
