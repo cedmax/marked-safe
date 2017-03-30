@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import autobinder from 'autobind-decorator'
 import Image from 'components/image'
 import Login from 'components/login'
+import Presets from 'components/presets'
 
 const labelStyle = {
   width: '150px',
@@ -35,18 +36,26 @@ export default class Form extends Component {
 
     return (
       <div>
-        <div>{login}</div><br /><br />
-        <label style={labelStyle}>Your Name:</label> <input placeholder={this.props.name} onBlur={(e) => this.update('name', e.target.value)} /><br /><br />
-        <label style={labelStyle}>Event Name:</label> <input placeholder={this.props.event} onBlur={(e) => this.update('event', e.target.value)} /><br /><br />
-        <label style={labelStyle}>Date:</label> <input placeholder={this.props.date} onBlur={(e) => this.update('date', e.target.value)} /><br /><br />
+        <div style={{border: '1px dotted #ddd', padding: '0 20px 20px'}}>
+          <h2>You</h2>
+          <div>{login}</div><br /><br />
+          <label style={labelStyle}>Your Name:</label> <input placeholder={this.props.name} onBlur={(e) => this.update('name', e.target.value)} /><br /><br />
+          { showImage }<br />
+          <div style={{display: this.state.hideImage ? 'none' : 'block'}}>
+            <label style={labelStyle}>Your pic:</label>
+            <div style={{paddingTop: '30px'}}><Image onSave={(url) => this.update('imageYou', url)} /></div><br style={{clear: 'both'}} /><br />
+          </div><br />
+        </div>
+        <div style={{border: '1px dotted #ddd', padding: '0 20px 20px', marginTop: -1}}>
+          <h2>The Event</h2>
+          <label style={labelStyle}>Presets:</label> <Presets presets={this.props.presets} preSelect={this.props.preSelect} /><br /><br />
+          <label style={labelStyle}>Event Name:</label> <input placeholder={this.props.event} onBlur={(e) => this.update('event', e.target.value)} /> 
+          <br /><br />
+          <label style={labelStyle}>Date:</label> <input placeholder={this.props.date} onBlur={(e) => this.update('date', e.target.value)} /><br /><br />
 
-        { showImage }<br />
-        <div style={{display: this.state.hideImage ? 'none' : 'block'}}>
-          <label style={labelStyle}>Your pic:</label>
-          <div style={{paddingTop: '30px'}}><Image onSave={(url) => this.update('imageYou', url)} /></div><br style={{clear: 'both'}} /><br />
-        </div><br />
-        <label style={labelStyle}>Event pic:</label>
-        <div style={{paddingTop: '30px'}}><Image onSave={(url) => this.update('imageEvent', url)} /></div>
+          <label style={labelStyle}>Event pic:</label>
+          <div style={{paddingTop: '30px'}}><Image onSave={(url) => this.update('imageEvent', url)} /><br style={{clear: 'both'}} /></div>
+        </div>
       </div>
     )
   }

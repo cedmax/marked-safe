@@ -4,7 +4,7 @@ import fetchImage from 'utils/fetch-image'
 import save from 'utils/save'
 import Form from 'components/form'
 import MarkedSafe from 'components/marked-safe'
-import defaultState from 'default-state'
+import defaultState, { presets } from 'default-state'
 
 @autobinder
 export default class App extends Component {
@@ -18,7 +18,12 @@ export default class App extends Component {
     return (
       <div style={{padding: '30px'}}>
         <div style={{float: 'left', marginBottom: '30px'}}>
-          <Form {...this.state} onUpdate={this.update} onLogin={this.loggedIn} />
+          <Form
+            presets={presets}
+            preSelect={this.preset}
+            onUpdate={this.update}
+            onLogin={this.loggedIn}
+            {...this.state} />
         </div>
         <div style={{maxWidth: '500px', float: 'right', marginBottom: '30px'}}>
           <div id="result"><MarkedSafe
@@ -34,6 +39,12 @@ export default class App extends Component {
         </div>
       </div>
     )
+  }
+
+  preset (key) {
+    console.log(key)
+    const newState = Object.assign({}, this.state, presets[key])
+    this.setState(newState)
   }
 
   update (name, value) {

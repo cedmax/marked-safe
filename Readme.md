@@ -5,7 +5,7 @@ A very rough first draft of a Facebook marked safe generator, inspired by [a twe
 Add the data on the left (including the images from your profile and for the awful event) and press save on the right, when you are set. You will get to download an image matching what you generated.
 
 ### How does it work
-![Brexit Example](assets/example.gif)
+![Brexit Example](assets/examples/how.gif)
 
 ### End Result
-![Brexit Example](assets/brexit.jpg)
+![Brexit Example](assets/examples/brexit.jpg)
