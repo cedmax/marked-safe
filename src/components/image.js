@@ -30,24 +30,24 @@ export default class Images extends Component {
     if (this.state.imageCropped) {
       finalImage = (
         <div>
-          <img width="200" height="200" src={this.state.imageCropped} />
-          <button onClick={() => this.props.onSave(this.state.imageCropped)}>save</button>
+          <img style={{border: '1px solid #ddd'}} width="200" height="200" src={this.state.imageCropped} /><br />
+          <center style={{marginTop: '10px'}}><button onClick={() => this.props.onSave(this.state.imageCropped)}>Place the image</button></center>
         </div>
       )
     }
 
     return (
-      <div style={{display: 'flex'}}>
-        <div>
+      <div>
+        <div style={{float: 'left', 'margin': '3px'}}>
           <Dropzone accept="image/*" onDrop={this.onDrop}>
             <div>Try dropping some files here, or click to select files to upload.</div>
           </Dropzone>
         </div>
 
-        <div>
+        <div style={{float: 'left', 'margin': '3px'}}>
           {cropper}
         </div>
-        <div>
+        <div style={{float: 'left', 'margin': '3px'}}>
           {finalImage}
         </div>
       </div>
