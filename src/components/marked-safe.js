@@ -104,7 +104,7 @@ export default function (props) {
                             <span>
                               <div className="uiPopover _6a"><a href="#" className="_p share_action_link _5f9b" title="Send this to friends or post it on your timeline." role="button"><em className="_4qba">Share</em><span className="UFIShareLinkSpinner _1wfk img _55ym _55yn _55yo _5tqs" role="progressbar" aria-valuetext="Loading..." aria-busy="true" aria-valuemin="0" aria-valuemax="100" /></a></div>
                             </span>
-                            <span style={{float: 'right'}}><div className="uiPopover _6a"><a href="#" title="Send this to friends or post it on your timeline." role="button" className=" " style={{margin: 0, textDecoration: 'underline', fontWeight: 'initial', color: '#7f7f7f'}}><em className="_4qba">http://safe.dsgn.it</em><span className="UFIShareLinkSpinner _1wfk img _55ym _55yn _55yo _5tqs" role="progressbar" aria-valuetext="Loading..." aria-busy="true" aria-valuemin="0" aria-valuemax="100"></span></a></div></span>
+                            <span style={{float: 'right'}}><div className="uiPopover _6a"><a href="#" title="Send this to friends or post it on your timeline." role="button" className=" " style={{margin: 0, textDecoration: 'underline', fontWeight: 'initial', color: '#7f7f7f'}}><em className="_4qba">http://safe.dsgn.it</em><span className="UFIShareLinkSpinner _1wfk img _55ym _55yn _55yo _5tqs" role="progressbar" aria-valuetext="Loading..." aria-busy="true" aria-valuemin="0" aria-valuemax="100" /></a></div></span>
                           </div>
                         </div>
                       </div>
