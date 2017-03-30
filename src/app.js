@@ -34,7 +34,7 @@ export default class App extends Component {
             date={this.state.date}
           /></div>
           <div style={{textAlign: 'center'}}>
-            <button style={{fontSize: '120%', padding: '10px', marginRight: '3px'}} onClick={save}>Save</button>
+            <button style={{fontSize: '130%', padding: '7px 10px', background: 'white', borderWidth: '1px'}} onClick={save}>Save</button>
           </div>
         </div>
       </div>

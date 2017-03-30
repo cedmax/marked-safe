@@ -35,7 +35,7 @@ export default class Form extends Component {
     }
 
     return (
-      <div>
+      <div className="form">
         <div style={{border: '1px dotted #ddd', padding: '0 20px 20px'}}>
           <h2>You</h2>
           <div>{login}</div><br /><br />
@@ -43,7 +43,7 @@ export default class Form extends Component {
           { showImage }<br />
           <div style={{display: this.state.hideImage ? 'none' : 'block'}}>
             <label style={labelStyle}>Your pic:</label>
-            <div style={{paddingTop: '30px'}}><Image size={40} onSave={(url) => this.update('imageYou', url)} /></div><br style={{clear: 'both'}} /><br />
+            <div style={{paddingTop: '15px'}}><Image size={200} onSave={(url) => this.update('imageYou', url)} /></div><br style={{clear: 'both'}} /><br />
           </div><br />
         </div>
         <div style={{border: '1px dotted #ddd', padding: '0 20px 20px', marginTop: -1}}>
@@ -54,7 +54,7 @@ export default class Form extends Component {
           <label style={labelStyle}>Date:</label> <input placeholder={this.props.date} onBlur={(e) => this.update('date', e.target.value)} /><br /><br />
 
           <label style={labelStyle}>Event pic:</label>
-          <div style={{paddingTop: '30px'}}><Image size={158} onSave={(url) => this.update('imageEvent', url)} /><br style={{clear: 'both'}} /></div>
+          <div style={{paddingTop: '15px'}}><Image size={200} onSave={(url) => this.update('imageEvent', url)} /><br style={{clear: 'both'}} /></div>
         </div>
       </div>
     )

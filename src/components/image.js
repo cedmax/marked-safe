@@ -32,7 +32,7 @@ export default class Images extends Component {
       finalImage = (
         <div>
           <img style={{border: '1px solid #ddd'}} width={this.props.size} height={this.props.size} src={this.state.imageCropped} /><br />
-          <center style={{marginTop: '10px'}}><button onClick={() => this.props.onSave(this.state.imageCropped)}>Place the image</button></center>
+          <center style={{marginTop: '10px'}}><button style={{padding: '5px 7px', background: 'white', borderWidth: '1px'}} onClick={() => this.props.onSave(this.state.imageCropped)}>Place the image</button></center>
         </div>
       )
     }
@@ -44,7 +44,7 @@ export default class Images extends Component {
       borderColor: 'rgb(102, 102, 102)',
       borderStyle: 'dashed',
       borderRadius: '5px',
-      padding: '10px'
+      cursor: 'pointer'
     }
 
     return (
