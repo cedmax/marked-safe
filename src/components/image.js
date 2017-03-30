@@ -19,6 +19,7 @@ export default class Images extends Component {
     if (this.state.image) {
       cropper = (
         <Cropper
+          size={this.props.size}
           ref={(cropper) => this.cropper = cropper}
           image={this.state.image}
           crop={this.crop}
@@ -30,17 +31,27 @@ export default class Images extends Component {
     if (this.state.imageCropped) {
       finalImage = (
         <div>
-          <img style={{border: '1px solid #ddd'}} width="200" height="200" src={this.state.imageCropped} /><br />
+          <img style={{border: '1px solid #ddd'}} width={this.props.size} height={this.props.size} src={this.state.imageCropped} /><br />
           <center style={{marginTop: '10px'}}><button onClick={() => this.props.onSave(this.state.imageCropped)}>Place the image</button></center>
         </div>
       )
     }
 
+    const dropzoneStyle = {
+      width: this.props.size,
+      height: this.props.size,
+      borderWidth: '2px',
+      borderColor: 'rgb(102, 102, 102)',
+      borderStyle: 'dashed',
+      borderRadius: '5px',
+      padding: '10px'
+    }
+
     return (
       <div>
         <div style={{float: 'left', 'margin': '3px'}}>
-          <Dropzone accept="image/*" onDrop={this.onDrop}>
-            <div>Try dropping some files here, or click to select files to upload.</div>
+          <Dropzone style={dropzoneStyle} accept="image/*" onDrop={this.onDrop}>
+            <div><img src="assets/upload.svg" width="50%" style={{display: 'block', margin: 'auto', paddingTop: '25%', opacity: '.8'}} /></div>
           </Dropzone>
         </div>
 

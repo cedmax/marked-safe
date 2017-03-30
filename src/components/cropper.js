@@ -29,7 +29,7 @@ export default class myCropper extends Component {
     if (this.props.image) {
       return (<Cropper
         viewMode={1}
-        style={{height: 200, width: 200}}
+        style={{height: this.props.size, width: this.props.size}}
         ref={(cropper) => this.cropper = cropper}
         src={this.props.image}
         aspectRatio={1}
