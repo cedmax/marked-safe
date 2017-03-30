@@ -21,7 +21,7 @@ export const presets = {
     imageEvent: 'assets/presets/lit.jpg'
   },
   lost: {
-    event: 'The serie finale of Lost',
+    event: 'Lost series finale',
     category: 'TV',
     date: '23rd May 2010, 9pm',
     imageEvent: 'assets/presets/lost.jpg'
