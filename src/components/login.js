@@ -6,7 +6,6 @@ export default function Login (props) {
     <FacebookLogin
       appId="808302666012881"
       autoLoad
-      scope="publish_actions"
       fields="name,picture"
       callback={props.onLogin}
     />

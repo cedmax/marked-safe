@@ -69,16 +69,17 @@ export default class App extends Component {
     }
 
     let share
-    if (!this.state.shared && this.state.loggedIn) {
-      share = <button style={{fontSize: '120%', padding: '10px', margin: 'auto'}} onClick={() => this.update('loading', true) || publish(this.state.at, this.posted)}>Share</button>
-    } else if (this.state.loggedIn) {
-      share = <a href={this.state.shared}>See the post</a>
-    }
-
     let loadingTxt
-    if (this.state.loading) {
-      loadingTxt = 'Wait for it...'
-    }
+    // if (!this.state.shared && this.state.loggedIn) {
+    //   share = <button style={{fontSize: '120%', padding: '10px', margin: 'auto'}} onClick={() => this.update('loading', true) || publish(this.state.at, this.posted)}>Share</button>
+    // } else if (this.state.loggedIn) {
+    //   share = <a href={this.state.shared}>See the post</a>
+    // }
+
+    // let loadingTxt
+    // if (this.state.loading) {
+    //   loadingTxt = 'Wait for it...'
+    // }
 
     let showImage
     if (this.state.hideImage) {

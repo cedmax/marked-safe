@@ -19,7 +19,6 @@ export default function PostImageToFacebook (authToken, imageData, callback) {
   const fd = new FormData()
   fd.append('access_token', authToken)
   fd.append('source', blob)
-  fd.append('message', 'via http://safe.dsgn.it')
 
   const request = new XMLHttpRequest()
   request.onload = function ajaxSuccess () {
