@@ -67,7 +67,7 @@ export default class Form extends Component {
   }
 
   loggedIn (response) {
-    this.props.loggedIn(response, () => {
+    this.props.onLogin(response, () => {
       this.setState({
         loggedIn: true
       })
