@@ -12,13 +12,8 @@ export default function (props) {
   return (
     <div className="_4-u2 mbm _4mrt _5jmm _5pat _5v3q _4-u8" id="tl_unit_7026728389271775827" aria-labelledby="js_6i js_6j js_6k">
       <div className="_3ccb" id="u_jsonp_4_2">
-        <div />
         <div className="userContentWrapper _5pcr" role="article" aria-label="Story">
           <div className="_1dwg _1w_m _2ph_">
-            <div className="_4r_y">
-              <div className="_6a uiPopover _5pbi _cmw _5v56 _b1e" id="u_jsonp_4_4"><a className="_4xev _p" aria-label="Story options" href="#" aria-haspopup="true" aria-expanded="false" rel="toggle" role="button" id="u_jsonp_4_6" /></div>
-            </div>
-            <div className="_4gns accessible_elem" id="js_6i" />
             <div>
               <div className="_5x46">
                 <div className="clearfix _5va3">
@@ -41,7 +36,6 @@ export default function (props) {
                   </div>
                 </div>
               </div>
-              <div className="userContent" />
               <div className="_3x-2">
                 <div>
                   <div className="mtm">
@@ -73,7 +67,6 @@ export default function (props) {
                                   </div>
                                 </div>
                               </div>
-                              <a className="_52c6" href="#" tabIndex="-1" />
                             </div>
                           </span>
                         </div>
@@ -82,37 +75,33 @@ export default function (props) {
                   </div>
                 </div>
               </div>
-              <div />
             </div>
           </div>
           <div>
-            <form rel="async" className="commentable_item" method="post" action="#" id="u_jsonp_4_1c">
-              <input name="fb_dtsg" value="AQGaGUyLxyBG:AQFGwwHeydR_" autoComplete="off" type="hidden" /><input autoComplete="off" name="ft_ent_identifier" value="10155121416803126" type="hidden" /><input autoComplete="off" name="data_only_response" value="1" type="hidden" />
-              <div className="_sa_ _5vsi _192z">
-                <div className="_37uu">
+            <div className="_sa_ _5vsi _192z">
+              <div className="_37uu">
+                <div>
                   <div>
-                    <div>
-                      <div className="_3399 _a7s clearfix _zw3">
-                        <div className="_524d">
-                          <div className="_42nr">
-                            <span>
-                              <div className="_khz">
-                                <a aria-pressed="false" className="UFILikeLink _4x9- _4x9_ _48-k" href="#" role="button" tabIndex="-1">Like</a>
-                              </div>
-                            </span>
-                            <span><span className="_6a"><a className="comment_link _5yxe" role="button" href="#" title="Leave a comment"><em className="_4qba">Comment</em></a></span></span>
-                            <span>
-                              <div className="uiPopover _6a"><a href="#" className="_p share_action_link _5f9b" title="Send this to friends or post it on your timeline." role="button"><em className="_4qba">Share</em><span className="UFIShareLinkSpinner _1wfk img _55ym _55yn _55yo _5tqs" role="progressbar" aria-valuetext="Loading..." aria-busy="true" aria-valuemin="0" aria-valuemax="100" /></a></div>
-                            </span>
-                            <span style={{float: 'right'}}><div className="uiPopover _6a"><a href="#" title="Send this to friends or post it on your timeline." role="button" className=" " style={{margin: 0, textDecoration: 'underline', fontWeight: 'initial', color: '#7f7f7f'}}><em className="_4qba">http://safe.dsgn.it</em><span className="UFIShareLinkSpinner _1wfk img _55ym _55yn _55yo _5tqs" role="progressbar" aria-valuetext="Loading..." aria-busy="true" aria-valuemin="0" aria-valuemax="100" /></a></div></span>
-                          </div>
+                    <div className="_3399 _a7s clearfix _zw3">
+                      <div className="_524d">
+                        <div className="_42nr">
+                          <span>
+                            <div className="_khz">
+                              <a aria-pressed="false" className="UFILikeLink _4x9- _4x9_ _48-k" href="#" role="button" tabIndex="-1">Like</a>
+                            </div>
+                          </span>
+                          <span><span className="_6a"><a className="comment_link _5yxe" role="button" href="#" title="Leave a comment"><em className="_4qba">Comment</em></a></span></span>
+                          <span>
+                            <div className="uiPopover _6a"><a href="#" className="_p share_action_link _5f9b" title="Send this to friends or post it on your timeline." role="button"><em className="_4qba">Share</em><span className="UFIShareLinkSpinner _1wfk img _55ym _55yn _55yo _5tqs" role="progressbar" aria-valuetext="Loading..." aria-busy="true" aria-valuemin="0" aria-valuemax="100" /></a></div>
+                          </span>
+                          <span style={{float: 'right'}}><div className="uiPopover _6a"><a href="#" title="Send this to friends or post it on your timeline." role="button" className=" " style={{margin: 0, textDecoration: 'underline', fontWeight: 'initial', color: '#7f7f7f'}}><em className="_4qba">http://safe.dsgn.it</em><span className="UFIShareLinkSpinner _1wfk img _55ym _55yn _55yo _5tqs" role="progressbar" aria-valuetext="Loading..." aria-busy="true" aria-valuemin="0" aria-valuemax="100" /></a></div></span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
