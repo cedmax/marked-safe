@@ -9,8 +9,7 @@ export default class Images extends Component {
     super(props)
 
     this.state = {
-      image: null,
-      imageCropped: null
+      image: null
     }
   }
 
@@ -18,21 +17,15 @@ export default class Images extends Component {
     let cropper
     if (this.state.image) {
       cropper = (
-        <Cropper
-          size={this.props.size}
-          ref={(cropper) => this.cropper = cropper}
-          image={this.state.image}
-          crop={this.crop}
-        />
-      )
-    }
-
-    let finalImage
-    if (this.state.imageCropped) {
-      finalImage = (
         <div>
-          <img style={{border: '1px solid #ddd'}} width={this.props.size} height={this.props.size} src={this.state.imageCropped} /><br />
-          <center style={{marginTop: '10px'}}><button style={{padding: '5px 7px', background: 'white', borderWidth: '1px'}} onClick={() => this.props.onSave(this.state.imageCropped)}>Place the image</button></center>
+          <Cropper
+            size={this.props.size}
+            ref={(cropper) => this.cropper = cropper}
+            image={this.state.image}
+          />
+          <center style={{marginTop: '10px'}}>
+            <button style={{padding: '5px 7px', background: 'white', borderWidth: '1px'}} onClick={() => this.cropAndSave(this.state.imageCropped)}>Place the image</button>
+          </center>
         </div>
       )
     }
@@ -58,9 +51,6 @@ export default class Images extends Component {
         <div style={{float: 'left', 'margin': '3px'}}>
           {cropper}
         </div>
-        <div style={{float: 'left', 'margin': '3px'}}>
-          {finalImage}
-        </div>
       </div>
     )
   }
@@ -71,9 +61,7 @@ export default class Images extends Component {
     })
   }
 
-  crop () {
-    this.setState({
-      imageCropped: this.cropper.getImage()
-    })
+  cropAndSave () {
+    this.props.onSave(this.cropper.getImage())
   }
 };
