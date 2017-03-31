@@ -55,6 +55,9 @@ export default class App extends Component {
   }
 
   loggedIn (response, callback) {
+    if (!response || !response.name) {
+      return
+    }
     this.update('at', response.accessToken)
     this.update('name', response.name)
 
