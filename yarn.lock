@@ -1540,6 +1540,10 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
+dateformat@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-2.0.0.tgz#2743e3abb5c3fc2462e527dca445e04e9f4dee17"
+
 debug@2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
@@ -3647,6 +3651,14 @@ mixin-object@^2.0.1:
   dependencies:
     minimist "0.0.8"
 
+mondays@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mondays/-/mondays-1.0.0.tgz#4e7b5ab2377f7f7020a9bcc2dea2b638a0288a98"
+  dependencies:
+    jest "^19.0.2"
+    next-day "^1.1.0"
+    prev-day "^1.0.0"
+
 ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
@@ -3670,6 +3682,10 @@ natural-compare@^1.4.0:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+next-day@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/next-day/-/next-day-1.1.0.tgz#c326b44f4c2e23afdb06000650ae2f58ae0ab1d9"
 
 node-fetch@^1.0.1:
   version "1.6.3"
@@ -4334,6 +4350,10 @@ pretty-format@^19.0.0:
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-19.0.0.tgz#56530d32acb98a3fa4851c4e2b9d37b420684c84"
   dependencies:
     ansi-styles "^3.0.0"
+
+prev-day@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/prev-day/-/prev-day-1.0.0.tgz#fc91d997c9bd2591429a7e3fbb8776bf729705de"
 
 private@^0.1.6:
   version "0.1.7"

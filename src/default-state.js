@@ -1,3 +1,5 @@
+import mondays from 'mondays'
+import dateFormat from 'dateformat'
 
 const defaultImage = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
 
@@ -38,9 +40,15 @@ export const presets = {
     date: '8th July 2014, 5pm',
     imageEvent: 'assets/presets/mineirazo.jpg'
   },
+  monday: {
+    event: 'Monday',
+    category: 'Miscellaneous',
+    date: dateFormat(mondays.getPrevMonday(), 'dS mmmm yyyy'),
+    imageEvent: 'assets/presets/monday.jpg'
+  },
   toscani: {
     event: 'Toscani che parlano',
-    category: 'Italy',
+    category: 'Miscellaneous',
     date: '\'ho:stantemente',
     imageEvent: 'assets/presets/toscani.jpg'
   }
