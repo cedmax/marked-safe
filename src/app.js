@@ -42,7 +42,6 @@ export default class App extends Component {
   }
 
   preset (key) {
-    console.log(key)
     const newState = Object.assign({}, this.state, presets[key])
     this.setState(newState)
   }

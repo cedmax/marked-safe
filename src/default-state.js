@@ -43,7 +43,7 @@ export const presets = {
   monday: {
     event: 'Monday',
     category: 'Miscellaneous',
-    date: dateFormat(mondays.getPrevMonday(), 'dS mmmm yyyy'),
+    date: dateFormat(mondays.isMonday() ? new Date : mondays.getPrevMonday(), 'dS mmmm yyyy'),
     imageEvent: 'assets/presets/monday.jpg'
   },
   toscani: {
